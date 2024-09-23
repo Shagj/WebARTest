@@ -56,5 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const button = document.createElement("button");
   button.textContent = "Эхлэх"
   button.addEventListener("click", start);
-  document.body.appendChild(button);
+  //document.body.appendChild(button);
+  document.getElementById("addButton").appendChild(button);
 });
