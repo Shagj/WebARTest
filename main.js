@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     plane.rotation.x = Math.PI / 2;
     plane.rotation.y = 0;
-    plane.scale.multiplyScalar(3);
+    plane.scale.multiplyScalar(4);
     const anchor = mindarThree.addAnchor(0);
     anchor.group.add(plane);
 
