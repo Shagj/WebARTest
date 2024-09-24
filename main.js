@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const material = createChromaMaterial(texture, 0x00ff00);
     const plane = new THREE.Mesh(geometry, material);
 
-    plane.rotation.x = 90;
+    //plane.rotation.x = 90;
     plane.rotation.y = 0;
     plane.scale.multiplyScalar(1.5);
     const anchor = mindarThree.addAnchor(0);
