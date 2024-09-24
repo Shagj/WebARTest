@@ -29,13 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
     //const material = new THREE.MeshBasicMaterial({map: texture});
     const material = createChromaMaterial(texture, 0x00ff00);
     const plane = new THREE.Mesh(geometry, material);
-    const vector = new THREE.Vector3();
-
+    
     plane.rotation.x = Math.PI / 2;
     plane.rotation.y = 0;
-    vector.position.setX(5); 
     plane.scale.multiplyScalar(4);
-    plane.position.copy(vector);
+    plane.position.x = 2;
     const anchor = mindarThree.addAnchor(0);
     anchor.group.add(plane);
 
