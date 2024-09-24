@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   let vide = null;
   const init = async() => {
-    video = await loadVideo("./guitar-player.mp4");
+    video = await loadVideo("./video.mp4");
     video.play();
     video.pause();
   }
