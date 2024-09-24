@@ -25,14 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const video = await loadVideo("./video.mp4");
     const texture = new THREE.VideoTexture(video);
 
-    const geometry = new THREE.PlaneGeometry(1, 1920/1080);
+    const geometry = new THREE.PlaneGeometry(1, 1080/1920);
     //const material = new THREE.MeshBasicMaterial({map: texture});
     const material = createChromaMaterial(texture, 0x00ff00);
     const plane = new THREE.Mesh(geometry, material);
 
     //plane.rotation.x = 90;
     plane.rotation.y = 0;
-    plane.scale.multiplyScalar(1.5);
+    plane.scale.multiplyScalar(2.5);
     const anchor = mindarThree.addAnchor(0);
     anchor.group.add(plane);
 
